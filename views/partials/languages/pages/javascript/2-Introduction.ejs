@@ -1,0 +1,30 @@
+<div class="fluid-container p-0">
+    <h1>Testing the loading of a website</h1>
+    <span class="badge bg-primary">Intermidiate</span>
+    <span class="badge bg-secondary">Deprecated</span>
+    <span class="badge bg-success">Beginner</span>
+    <span class="badge bg-danger">Expert</span>
+    <span class="badge bg-warning text-dark">Hard</span>
+    <span class="badge bg-info text-dark">Tutorial</span>
+    <span class="badge bg-dark">Practice</span>
+    <h1 class="text-decoration-underline">Underlined Text</h1>
+    <h1 class="fw-bold">Bolded Header</h1>
+    <h1 class="font-monospace">This is in monospace</h1>
+</div>
+
+<pre class="fluid-container rounded p-0 text-break fs-6" style="background-color: #1a1b26;">
+    <code class="<%= locals.language ? `language-${locals.language}` : ""%>" style="padding: 0; padding-left: 1rem;">console.log("I'm testing some javascript prints")
+app.get('/load', (req,res) => {
+    if(req.query.language != null && req.query.page !=null) {
+        res.render('index', { languages: lang, page: `partials/languages/pages/${req.query.language}/${req.query.page}` });
+    } else {
+        res.redirect('/');
+    }
+});</code>
+</pre>
+
+<div class="fluid-container p-0">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem architecto atque accusantium voluptatibus quisquam aliquam minima eligendi sed, corrupti libero? Exercitationem assumenda praesentium culpa facilis, repudiandae non quod eaque odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem architecto atque accusantium voluptatibus quisquam aliquam minima eligendi sed, corrupti libero? Exercitationem assumenda praesentium culpa facilis, repudiandae non quod eaque odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem architecto atque accusantium voluptatibus quisquam aliquam minima eligendi sed, corrupti libero? Exercitationem assumenda praesentium culpa facilis, repudiandae non quod eaque odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem architecto atque accusantium voluptatibus quisquam aliquam minima eligendi sed, corrupti libero? Exercitationem assumenda praesentium culpa facilis, repudiandae non quod eaque odio.</p>
+</div>
+
+<p>Test</p>

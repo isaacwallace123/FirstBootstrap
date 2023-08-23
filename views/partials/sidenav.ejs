@@ -1,0 +1,15 @@
+<div class="container flex-shrink-0 p-3 bg-dark" style="width: 280px;">
+  <a href="/" class="d-flex align-items-center pb-3 mb-3 link-light text-decoration-none border-bottom">
+    <svg class="bi me-2" width="30" height="24">
+        <use xlink:href="#bootstrap"></use>
+    </svg>
+    <span class="fs-5 fw-semibold">Languages</span>
+  </a>
+  <ul class="list-unstyled ps-0">
+    <% for(let language in locals.languages) { %>
+      <%- include(`languages/button`, { Pages: locals.languages[language], Name: language }); -%>
+    <% } %>
+
+    <li class="border-top my-3"></li>
+  </ul>
+</div>

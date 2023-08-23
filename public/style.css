@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+header {
+    background:
+        linear-gradient(63deg, rgb(33, 37, 41) 23%, transparent 23%) 7px 0,
+        linear-gradient(63deg, transparent 74%, rgb(33, 37, 41) 78%),
+        linear-gradient(63deg, transparent 34%, rgb(33, 37, 41) 38%, rgb(33, 37, 41) 58%, transparent 62%), rgb(33, 37, 41);
+    background-size: 16px 48px;
+    background-color: rgb(27, 30, 32);
+}
+
+main {
+    overflow-x: hidden;
+}
+
+.btn-label {
+	position: relative;
+	left: -12px;
+	display: inline-block;
+	padding: 6px 12px;
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 3px 0 0 3px;
+}
+
+.btn-labeled {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.btn {
+	margin-bottom: 10px;
+}
+
+pre {
+    margin: 0;
+}
+
+code {
+    padding: 0;
+	margin: 0;
+}

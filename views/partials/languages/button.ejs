@@ -1,0 +1,12 @@
+<li class="mb-1">
+    <button class="btn btn-toggle m-0 align-items-center rounded collapsed text-light text-uppercase" data-bs-toggle="collapse" data-bs-target="#<%= locals.Name %>" aria-expanded="false">
+        <%- locals.Name -%>
+    </button>
+    <div class="collapse" id="<%= locals.Name %>">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 px-3 small">
+            <% for(let page in locals.Pages) { %>
+                <li><a href="/tutorial?language=<%= locals.Name %>&page=<%= locals.Pages[page] %>" class="link-secondary text-decoration-none rounded"><%- locals.Pages[page].split(".")[0]; -%></a></li> 
+            <% } %>
+        </ul>
+    </div>
+</li>

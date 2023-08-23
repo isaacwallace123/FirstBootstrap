@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <%- include('partials/metaData') -%>
+
+    <body>
+        <%- include('partials/header') -%>
+        <%- include('partials/navbar') -%>
+
+        <main class="fluid-container d-flex">
+            <%- include('partials/sidenav') -%>
+
+            <div class="col">
+                <div class="fluid-container m-2 p-2 bg-light rounded">
+                    <% if(locals.page != null) { %>
+                        <%- include(`${locals.page}`) -%>
+                    <% } %>
+                </div>
+            </div>
+        </main>
+
+        <%- include('partials/footer') -%>
+    </body>
+</html>
